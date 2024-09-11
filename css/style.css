@@ -1,0 +1,72 @@
+body{
+    font-family: "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.50;
+    color: rgb(149, 42, 188);
+    background-color: rgb(113, 222, 185);
+    margin: 0;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.navbar{
+    position: relative;
+    min-height: 50px;
+    background-color: blanchedalmond;
+    margin-bottom: 20px;
+    top: 0;
+}
+
+.container{
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+      width: 1170px; /*ancho*/
+}
+
+.nav{
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.navbar-nav{
+    float: left;
+    margin: 7px -15px;
+}
+
+.nav > li{/*Para todos los li que esten dentro del nav tendrán estos estilos*/
+    float: left;
+    position: relative;
+    display: block;
+}
+
+.nav > li > a{
+    padding: 10px 15px;
+    line-height: 20px;
+    position: relative;
+    display: block;
+    color: rgb(0, 0, 156);
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus{
+    color: black;
+}
+
+.table{
+    border-collapse: collapse;
+    padding: 10px;
+    width: 100%;
+}
+
+.table td, .table th{
+    border: 1px solid black;
+    padding: 10px;
+}
