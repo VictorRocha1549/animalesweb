@@ -12,7 +12,7 @@
     <div class="navbar">
         <div class="container">
             <ul class="nav bar-nav">
-                <li><a href="index.html" class="class">INICIO</a></li>
+                <li><a href="index.php" class="class">INICIO</a></li>
                 <li><a href="" class="class">AGREGAR</a></li>
             </ul>
         </div>
