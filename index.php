@@ -4,6 +4,8 @@
         <ul class="nav bar-nav">
             <li><a href="" class="class">INICIO</a></li>
             <li><a href="./formulario.php" class="class">AGREGAR</a></li>
+            <li><a href="./airplanesIndex.php" class="class">Aviones</a> </li>
+            <li><a href="./planetasIndex.php" class="class">PLANETAS</a> </li>
         </ul>
     </div>
 </div>
@@ -19,20 +21,20 @@
             <th>Color</th>
         </tr>
     </thead>
-    <tr>
-        <td>Toño</td>
-        <td>Tigre</td>
-        <td>Naranja</td>
-    </tr>
-    <tr>
-        <td>Pancho</td>
-        <td>Pantera</td>
-        <td>Negro</td>
-    </tr>
-    <tr>
-        <td>Nesquikk</td>
-        <td>Conejo</td>
-        <td>Amarillo</td>
-    </tr>
+    <tbody>
+        <?php
+            include("php_entities/Animal.php");
+            $registros = getAll();
+            if (count($registros) > 0) {
+                foreach ($registros as $row) {
+                    echo"<tr>".
+                    "<td>". $row ->apodo."</td>".
+                    "<td>". $row -> especie."</td>".
+                    "<td>". $row -> color."</td>".
+                    "</tr>";
+                }
+            }
+        ?>
+    </tbody>
 </table>
 <?php include("footer.php") ?>
