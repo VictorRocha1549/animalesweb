@@ -32,17 +32,23 @@ h1{
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
+    
 }
 
 .navbar-nav{
     float: left;
     margin: 7px -15px;
+    
 }
 
 .nav > li{/*Para todos los li que esten dentro del nav tendrán estos estilos*/
     float: left;
     position: relative;
     display: block;
+    background-color: rgb(98, 98, 253);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 5px;
 }
 
 .nav > li > a{
@@ -50,14 +56,16 @@ h1{
     line-height: 20px;
     position: relative;
     display: block;
-    color: rgb(0, 0, 156);
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    background-color: transparent;
+    /*background-color: transparent;*/
 }
 
 .nav > li > a:hover,
 .nav > li > a:focus{
+    background-color: #e0e0e0; 
     color: black;
+    border-radius: 5px;
 }
 
 .table{
@@ -101,4 +109,41 @@ h2 {
     font-size: 18px;
     color: rgb(236, 249, 60);
     margin-bottom: 10px;
+}
+
+.fechaNacimiento p {
+    margin: 0;
+}
+
+.fechaNacimiento input {
+    margin: 0;
+    display: block;
+}
+
+.diasTranscurridos, .diasFaltantes{
+    font-size: 30px;
+    color: brown;
+    background-color: beige;
+    text-align: center;
+}
+
+.añobisiesto{
+    font-size: 30px;
+    font-weight: 800;
+    background-color: yellow;
+    color: blue;
+}
+.tituloExamen{
+    font-size: 60px;
+    color: blue;
+    font-weight: bold;
+    text-align: center;
+}
+
+.años{
+    padding-bottom: 60px;
+}
+.subtitulo{
+    text-align: center;
+    text-decoration: underline blue;
 }
