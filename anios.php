@@ -3,10 +3,12 @@
     <script src="./script/anios.js"></script>
     <div class="años">
         <h2 class="tituloExamen">Identificar años bisiestos</h2>
-        <input type="number" id="anoInicio" placeholder="Año de inicio">
+        <div class="conBisiesto">
+        <input class="inputAno" type="number" id="anoInicio" placeholder="Año de inicio">
         <input type="number" id="anoFinal" placeholder="Año final">
         <button onclick="Mostrar()">Mostar</button>
         <div id="divAnios"></div>
+        </div>
     </div>
     <div>
         <h2 class="tituloExamen">Cumpleaños</h2>
